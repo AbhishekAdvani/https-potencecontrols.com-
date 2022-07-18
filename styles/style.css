@@ -1,0 +1,302 @@
+/* Make Navbar appear at right */
+.navbar-nav {
+    margin-left: auto;
+}
+
+/* Change navbar default color and on hover */
+.navbar-nav .nav-item .nav-link {
+    color: black;
+}
+
+.navbar-nav .nav-item.active .nav-link,
+.navbar-nav .nav-item:hover .nav-link {
+    color: blue;
+}
+
+/*  */
+/* .input-group{
+    width: 500px !important;
+    margin:auto;
+}
+@media (min-width: 500px) and (max-width: 750px),
+(min-width: 992px) {
+    .w-lg-100 {
+        width: 100% !important;
+    }
+} */
+
+.carousel-inner img {
+    max-height: 400px;
+}
+
+.carousel-indicators img {
+    max-width: 100px;
+}
+
+.row {
+    margin-left: 15px;
+    margin-right: 15px;
+    padding: 10px 10px;
+    text-align: center;
+}
+
+/* products */
+@import url("https://fonts.googleapis.com/css?family=Muli:400,700&display=swap");
+
+/* body {
+    margin: 0;
+    height: calc(100vh - 8em);
+    font-family: "Muli", sans-serif;
+    background-color: #f9f9f9;
+} */
+
+h1 {
+    text-align: center;
+    margin: 1.5em;
+}
+
+.entry img {
+    width: 90%;
+    border-radius: 50%;
+}
+
+.container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.items {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    animation: carouselAnim 50s infinite alternate linear;
+}
+
+.entry {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    width: 300px;
+    background: #fff;
+    margin: 1em;
+    padding: 0.5em;
+    border-radius: 10px;
+    box-shadow: 4px 4px 5px 0px rgba(0, 0, 0, 0.5);
+}
+
+@media only screen and (max-width: 768px) {
+    .items {
+        animation: carouselAnim 35s infinite alternate linear;
+    }
+
+    @keyframes carouselAnim {
+        from {
+            transform: translate(0, 0);
+        }
+
+        to {
+            transform: translate(calc(-100% + (2 * 300px)));
+        }
+    }
+}
+
+.entry p {
+    text-align: center;
+    padding: 1em;
+}
+
+.name {
+    font-weight: bold;
+}
+
+@keyframes carouselAnim {
+    from {
+        transform: translate(0, 0);
+    }
+
+    to {
+        transform: translate(calc(-100% + (5 * 300px)));
+    }
+}
+
+.container .faders {
+    width: 100%;
+    position: absolute;
+    height: 100%;
+}
+
+/*  */
+/* color:  red#ec1c24, black#212d31, grey#343a40, white#eee  */
+* {
+    box-sizing: border-box;
+}
+
+/* body {
+    padding: 1rem;
+    color: #212d31;
+    font-family: 'Roboto', sans-serif;
+  } */
+
+.contain {
+    background-color: #eee;
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1em;
+}
+
+div.form {
+    background-color: #eee;
+}
+
+.contact-wrapper {
+    margin: auto 0;
+}
+
+.submit-btn {
+    float: left;
+}
+
+.reset-btn {
+    float: right;
+}
+
+.form-headline:after {
+    content: "";
+    display: block;
+    width: 10%;
+    padding-top: 10px;
+    border-bottom: 3px solid #ec1c24;
+}
+
+.highlight-text {
+    color: #ec1c24;
+}
+
+.hightlight-contact-info {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 1.5;
+}
+
+.highlight-text-grey {
+    font-weight: 500;
+}
+
+.email-info {
+    margin-top: 20px;
+}
+
+::-webkit-input-placeholder {
+    /* Chrome */
+    font-family: 'Roboto', sans-serif;
+}
+
+.required-input {
+    color: black;
+}
+
+@media (min-width: 600px) {
+    .contain {
+        padding: 0;
+    }
+}
+
+h3,
+ul {
+    margin: 0;
+}
+
+h3 {
+    margin-bottom: 1rem;
+}
+
+.form-input:focus,
+textarea:focus {
+    outline: 1.5px solid #ec1c24;
+}
+
+.form-input,
+textarea {
+    width: 100%;
+    border: 1px solid #bdbdbd;
+    border-radius: 5px;
+}
+
+.wrapper>* {
+    padding: 1em;
+}
+
+@media (min-width: 700px) {
+    .wrapper {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+
+    .wrapper>* {
+        padding: 2em 2em;
+    }
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contacts {
+    color: #212d31;
+}
+
+.form {
+    background: #fff;
+}
+
+form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
+
+form label {
+    display: block;
+}
+
+form p {
+    margin: 0;
+}
+
+.full-width {
+    grid-column: 1 / 3;
+}
+
+button,
+.submit-btn,
+.form-input,
+textarea {
+    padding: 1em;
+}
+
+button,
+.submit-btn {
+    background: transparent;
+    border: 1px solid #ec1c24;
+    color: #ec1c24;
+    border-radius: 15px;
+    padding: 5px 20px;
+    text-transform: uppercase;
+}
+
+button:hover,
+.submit-btn:hover,
+button:focus,
+.submit-btn:focus {
+    background: #ec1c24;
+    outline: 0;
+    color: #eee;
+}
+
+.error {
+    color: #ec1c24;
+}
